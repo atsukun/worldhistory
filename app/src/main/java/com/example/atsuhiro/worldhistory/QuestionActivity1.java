@@ -17,17 +17,12 @@ public class QuestionActivity1 extends AppCompatActivity {
     Button button9;
 
 
-//1
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question1);
 
-//2
+
         questionText = (TextView)findViewById(R.id.questions);
 
         button6 = (Button)findViewById(R.id.button6);
