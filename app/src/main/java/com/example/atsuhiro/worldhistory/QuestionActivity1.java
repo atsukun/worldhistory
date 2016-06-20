@@ -44,7 +44,7 @@ public class QuestionActivity1 extends AppCompatActivity {
 
     private boolean isAnswer(String text) {
         return true;
-    }else
+    }
 
 
 
