@@ -2,13 +2,22 @@ package com.example.atsuhiro.worldhistory;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class QuestionActivity1 extends AppCompatActivity {
 
     ImageQuestion[] imageQuestions;//画像の問題
     int count = 0;
-    TextView textView2;
+    TextView questionText;
+    Button button6;
+    Button button7;
+    Button button8;
+    Button button9;
+
+
+//1
 
 
 
@@ -18,7 +27,16 @@ public class QuestionActivity1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question1);
 
-        textView2 = (TextView) findViewById(R.id.question1);
+//2
+        questionText = (TextView)findViewById(R.id.questions);
+
+        button6 = (Button)findViewById(R.id.button6);
+
+        button7 = (Button)findViewById(R.id.button7);
+
+        button8 = (Button)findViewById(R.id.button8);
+
+        button9 = (Button)findViewById(R.id.button9);
 
         imageQuestions = ImageQuestion.values();
         showQuestion(imageQuestions[count]);
@@ -31,6 +49,14 @@ public class QuestionActivity1 extends AppCompatActivity {
 
     private boolean isAnswer(String text) {
         return true;
+    }else
+
+
+
+    private void makeQuestion(){
+
     }
 
 }
+
+
