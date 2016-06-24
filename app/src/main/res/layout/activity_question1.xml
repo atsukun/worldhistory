@@ -10,11 +10,11 @@
     tools:context="com.example.atsuhiro.worldhistory.QuestionActivity1">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:weightSum="1"
-        android:id="@+id/linearLayout2">
+        android:id="@+id/linearLayout2"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,16 +28,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="New Text"
-            android:id="@+id/questions"
+            android:id="@+id/questionText"
             android:layout_gravity="center_horizontal"
             android:textSize="30dp"
-            android:onClick="question1" />
+            android:onClick="questionText" />
 
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="260dp"
             android:id="@+id/questionImageView"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@drawable/skate"
+            android:onClick="questionImageView"
+            android:layout_gravity="center_horizontal" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -49,7 +51,8 @@
                 android:orientation="vertical"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:onClick="choices1">
 
                 <Button
                     android:layout_width="match_parent"

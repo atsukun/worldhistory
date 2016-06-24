@@ -10,14 +10,29 @@ buildscript {
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
-}
 
-allprojects {
-    repositories {
-        jcenter()
+    android {
+        compileSdkVersion 'android-N'
+        buildToolsVersion '24.0.0-rc3'
+
+
+        defaultConfig {
+            minSdkVersion 'N'
+            targetSdkVersion 'N'
+
+        }
+
+
+
+
+        allprojects {
+            repositories {
+                jcenter()
+            }
+        }
+
+        task clean(type: Delete) {
+            delete rootProject.buildDir
+        }
     }
-}
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
 }
